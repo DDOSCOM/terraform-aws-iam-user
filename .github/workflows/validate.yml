@@ -16,3 +16,4 @@ jobs:
       - uses: hashicorp/setup-terraform@v3
       - run: terraform init
       - run: terraform validate -no-color
+      - run: terraform fmt -recursive -list=true -check
